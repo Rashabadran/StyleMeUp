@@ -1,7 +1,8 @@
 import React from "react";
 import Navbar from "./User/Navbar/Navbar";
-// import Footer from "./User/footer";
+import Footer from "./User/Footer/Footer";
 import { Outlet, useLocation } from "react-router";
+
 const Layout = () => {
   let location = useLocation();
 
@@ -12,7 +13,7 @@ const Layout = () => {
           <Navbar />
           <Outlet />
           
-            {/* <Footer /> */}
+            <Footer />
           
         </main>
       </section>

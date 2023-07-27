@@ -1,41 +1,214 @@
 .heroImage{
     width:100%;
-    height: 90vh;
+   
 }
-/* ImageCarousel.css */
 
-.carousel-container {
-  position: relative;
+
+/*  Carousel*/
+
+
+.scroll-collection {
   width: 100%;
-  overflow: hidden;
-}
-
-.carousel-track {
+  height: 85%;
   display: flex;
-  flex-direction: row; /* Set the flex direction to row */
-  transition: transform 0.3s ease-in-out;
+  justify-content: space-between;
 }
 
-.carousel-track img {
-  width: 372px; /* Customize the size of the small images */
-  height: 298px; /* Customize the size of the small images */
-  margin-right: 10px; /* Add some margin between the images */
+
+.cover {
+    height: 87%;
+      width: calc(470px * 3 + 70px * 3);
+      padding-left: 2%;
+}
+.parent-arrow {
+  align-self: center;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.carousel-button {
+.arrows-heights {
+  height: 100%;
+    width: 100%;
+}
+
+.child-image1 {
+  width: 372px;
+  height: 298px;
+}
+.child-image2 {
+  width: 372px;
+  height: 298px;
+}
+.child-image {
+  width: 317px;
+  height: 298px;
+}
+
+.leftarrow {
+  background: none;
+  border: 0px;
+  height: 78px;
+  width: fit-content;
+}
+
+.rightarrow {
+  background: none;
+  border: 0px;
+  height: 78px;
+  width: fit-content;
+}
+.scroll-devs {
+  width: 96%;
+  height: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  scroll-behavior: smooth;
+  
+}
+
+/*Services Design*/
+
+.services1{
+  border: 2px solid #F1B434;
+  border-radius: 10px;
+  padding:30px;
+  margin-right: 90px;
+  margin-left:60px 
+}
+.services{
+  border: 2px solid #F1B434;
+  border-radius: 10px;
+  padding:30px;
+  margin-right: 80px;
+}
+
+.booking{
+    background: linear-gradient(180deg, rgba(241, 180, 52, 1) -0.0021576953671145257%, rgba(241, 199, 52, 0) 99.99784221151987%);
+
+    border-radius: 9.203947067260742px;
+  width: 143.58px;
+  height: 36.82px;
+    transition: all 0.3s ease;
+  
+}
+.booking:after {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: transparent;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.carousel-button.left {
-  left: 0;
-}
-
-.carousel-button.right {
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
   right: 0;
+  z-index: -1;
+  background-color: linear-gradient(180deg, rgba(255, 254, 245, 0.47) 0%, rgba(255, 254, 242, 0.46) 0.01%, rgba(247, 239, 138, 0.00) 100%);
+  border-radius: 5px;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+}
+.booking:hover{
+   color: #000;
+   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+   transform: translateY(-0.25em);
+
+}
+
+.booking:hover::after{
+  left: 0;
+  width: 100%;
+}
+
+.booking:active{
+  top: 5px;
+}
+
+.paragraphofServices{
+  font-size: 23.03px;
+  font-weight:  400;
+  font-family:'Inknut Antiqua' ;
+}
+
+.titleServices{
+  font-family: 'Inknut Antiqua';
+font-size: 30.01px;
+font-weight: 550;
+line-height: 0px;
+margin-top:50px;
+}
+.line{
+  margin-bottom: 35px;
+}
+
+
+
+
+/*Discover*/
+.discover{
+  margin-top:50px;
+border-radius: 10px;
+background: linear-gradient(180deg, rgba(255, 254, 245, 0.47) 0%, rgba(255, 254, 242, 0.46) 0.01%, rgba(247, 239, 138, 0.00) 100%);
+
+}
+.discoverParagraph{
+
+  color: #000;
+text-align: center;
+font-family: Inknut Antiqua;
+font-size: 23.01px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-left:400px;
+padding-right: 400px;
+}
+.discoverTitle{
+  color: #000;
+font-family: Inknut Antiqua;
+font-size: 30.01px;
+font-style: normal;
+line-height: 0px;
+padding-top: 46px;
+font-weight: 550;
+}
+
+.aboutUsTitle{
+color: #000;
+font-family: Inknut Antiqua;
+font-size: 30.01px;
+font-style: normal;
+line-height: 0px;
+padding-top: 46px;
+font-weight: 550;
+}
+.aboutUsSection{
+  display: flex;
+  padding-right: 100px;
+   padding-left: 100px;
+  
+}
+.aboutUsParagraph{
+  text-align: justify;
+  padding-right: 50px;
+  width: 50%;
+  color: #000;
+  font-family: Inknut Antiqua;
+  font-size: 23.01px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding-left: 100px; */
+ 
+
+}
+.imageAboutUs{
+  width: 50%;
+
 }
