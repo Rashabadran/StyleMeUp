@@ -51,37 +51,42 @@ function Navbar(){
      <ul className={menu}>
        <div className="navDesign">
          <li className={nav ? "maintain" : "normal"}>
-           {/* <a href="/" className={location.pathname === "/" ? "active" : ""}> */}
+            <a href="/" className={location.pathname === "/" ? "active" : ""}> 
            Home
-           {/* </a> */}
+           </a>
          </li>
          <li className={nav ? "maintain" : "normal"}>
-           {/* <a
-           href="/balloons"
-           className={location.pathname === "/balloons" ? "active" : ""}
-         > */}
+           <a
+           href="/#servicess"
+           className={location.pathname === "/#services" ? "active" : ""}
+         >
            Our Services
-           {/* </a> */}
+           </a>
          </li>
+         
          <li className={nav ? "maintain" : "normal"}>
-           Contact Us
-           {/* </a> */}
-         </li>
-         <li className={nav ? "maintain" : "normal"}>
-           {/* <a
-           href="/contactus"
-           className={location.pathname === "/contactus" ? "active" : ""}
-         > */}
+          <a
+           href="/#aboutUs"
+           className={location.pathname === "/#aboutUs" ? "active" : ""}
+         >
            About Us
-           {/* </a> */}
+           </a>
          </li>
          <li className={nav ? "maintain" : "normal"}>
-           {/* <a
-           href="/contactus"
-           className={location.pathname === "/contactus" ? "active" : ""}
-         > */}
+           <a
+           href="/contactUs"
+           className={location.pathname === "/contactUs" ? "active" : ""}
+         >
+           Contact Us
+           </a>
+         </li>
+         <li className={nav ? "maintain" : "normal"}>
+           <a
+           href="/#servicess"
+           className={location.pathname === "/#servicess" ? "active" : ""}
+         >
            Book Your Appointment
-           {/* </a> */}
+           </a>
          </li>
        </div>
      </ul>

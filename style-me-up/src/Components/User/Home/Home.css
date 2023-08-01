@@ -1,8 +1,20 @@
-.heroImage{
-    width:100%;
-   
+.heroImage {
+  height: 95vh; /* Adjust the height as needed */
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
+/* Add the parallax effect */
+.homePart {
+  overflow-x: hidden;
+  overflow-y: auto;
+  
+}
+.react-parallax-bgimage{
+  height:98vh!important
+}
 
 /*  Carousel*/
 
@@ -14,12 +26,12 @@
   justify-content: space-between;
 }
 
-
 .cover {
     height: 87%;
       width: calc(470px * 3 + 70px * 3);
       padding-left: 2%;
 }
+
 .parent-arrow {
   align-self: center;
   width: 20%;
@@ -85,6 +97,12 @@
   border-radius: 10px;
   padding:30px;
   margin-right: 80px;
+}
+.child-image1:hover{
+  transform:translateY(-0.5rem);
+}
+.child-image2:hover{
+  transform:translateY(-0.5rem);
 }
 
 .booking{

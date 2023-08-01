@@ -1,4 +1,4 @@
-import React from "react";
+import {React,useState} from "react";
 import "./Home.css";
 import Zoom from "react-reveal/Zoom";
 import Bounce from "react-reveal/Bounce";
@@ -15,7 +15,12 @@ import line from "./images/line.png"
 import omar from "./images/omarPic.png"
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import videoo from "./images/videoo.mp4";
+import {Parallax} from "react-parallax";
+import Typewriter from "typewriter-effect";
 function Home() {
+
+
+  /*Carousel*/
   const scroll = () => {
     var left = document.querySelector(".scroll-devs");
     left.scrollBy(280, 0);
@@ -27,17 +32,41 @@ function Home() {
   };
 
 
+  /*TypeWriter*/
+   const [typewriterDone, setTypewriterDone] = useState(false);
+   const [typewriterDone2, setTypewriterDone2] = useState(false);
+  const text =
+    "Unlock your beauty's true potential at our salon. Experience the transformative touch of our expert stylists, indulging you in top-notch treatments. Book your appointment now and let us pamper you to radiate confidence and elegance like never before.";
+
+   const handleTypewriterComplete = () => {
+     setTypewriterDone(true);
+     setTypewriterDone2(true);
+   };
+
+  const texts =
+    "Welcome to Style Me Up, where beauty is redefined. Step into our world of elegance and sophistication. Our expert team is dedicated to crafting your perfect look, from head to toe. Discover the latest trends, pamper yourself with luxurious treatments, and leave feeling confident and fabulous. At Style Me Up, we embrace individuality and empower you to shine. Join us for a transformative experience that celebrates your unique style. Indulge in the art of beauty at Style Me Up. Unleash your inner glamour and let us elevate your charm to new heights. Your journey to a more stylish you begins here.";
+
+
   return (
     <>
       {/*HeroImage*/}
       <div className="homePart">
-        <img className="heroImage" src={heroIm} alt="heroImage" />
+        <Parallax
+          strength={300}
+          bgImage={heroIm}
+          bgImageAlt="Hero Image"
+          className="heroImage"
+        />
+
+        {/* <img className="heroImage" src={heroIm} alt="heroImage" /> */}
 
         {/* Title of Carousel */}
-        <Fade>
-          <p className="titleServices">Our Services</p>
+        
+          <p className="titleServices" id="servicess">
+            Our Services
+          </p>
           <img className="line" src={line} alt="line" />
-        </Fade>
+        
         <div className="scroll-collection">
           <div className="parent-arrow">
             <button className="leftarrow" onClick={() => scrollr()}>
@@ -48,13 +77,13 @@ function Home() {
           {/* Carousel */}
           <div className="cover">
             <div className="scroll-devs">
-              <Bounce>
+              
                 <div className="services1">
                   <img className="child-image1" src={pic1} alt="pic1" />
                   <p className="paragraphofServices">Haircut and Styling</p>
                   <button className="booking">Book Now</button>
                 </div>
-              </Bounce>
+              
               <div className="services">
                 <img className="child-image2" src={nailss} alt="pic2" />
                 <p className="paragraphofServices">Nails</p>
@@ -84,34 +113,49 @@ function Home() {
             </button>
           </div>
         </div>
-        <Zoom>
-          <div className="discover">
-            <p className="discoverTitle">
-              Discover Your Radiant Transformation
-            </p>
-            <img className="line" src={line2} alt="line" />
-            <p className="discoverParagraph">
-              Unlock your beauty's true potential at our salon. Experience the
-              transformative touch of our expert stylists, indulging you in
-              top-notch treatments. Book your appointment now and let us pamper
-              you to radiate confidence and elegance like never before.
-            </p>
-          </div>
-        </Zoom>
-        <p className="aboutUsTitle">About Us</p>
+
+        <div className="discover">
+          <p className="discoverTitle">Discover Your Radiant Transformation</p>
+          <img className="line" src={line2} alt="line" />
+          <p className="discoverParagraph">
+            {typewriterDone ? (
+              <p>{text}</p> // Display the full text without animation after typewriter is done
+            ) : (
+              <Typewriter
+                options={{
+                  autoStart: true,
+                  loop: true,
+                  pauseFor: 1180000,
+                  delay: 40,
+                  strings: [text],
+                  onComplete: handleTypewriterComplete,
+                }}
+              />
+            )}
+          </p>
+        </div>
+
+        <p className="aboutUsTitle" id="aboutUs">
+          About Us
+        </p>
         <img className="line" src={line} alt="line" />
         <div className="aboutUsSection">
-          <p className="aboutUsParagraph">
-            Welcome to Style Me Up, where beauty is redefined. Step into our
-            world of elegance and sophistication. Our expert team is dedicated
-            to crafting your perfect look, from head to toe. Discover the latest
-            trends, pamper yourself with luxurious treatments, and leave feeling
-            confident and fabulous. At Style Me Up, we embrace individuality and
-            empower you to shine. Join us for a transformative experience that
-            celebrates your unique style. Indulge in the art of beauty at Style
-            Me Up. Unleash your inner glamour and let us elevate your charm to
-            new heights. Your journey to a more stylish you begins here.
-          </p>
+          <div className="aboutUsParagraph">
+            {typewriterDone2 ? (
+              <p>{texts}</p> // Display the full text without animation after typewriter is done
+            ) : (
+              <Typewriter
+                options={{
+                  autoStart: true,
+                  loop: true,
+                  delay: 40,
+                  pauseFor: 180000,
+                  strings: [texts],
+                  onComplete: handleTypewriterComplete,
+                }}
+              />
+            )}
+          </div>
           <video controls>
             <source src={videoo} type="video/mp4" />
             Your browser does not support the video tag.
