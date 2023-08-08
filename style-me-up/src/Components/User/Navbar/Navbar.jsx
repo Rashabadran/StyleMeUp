@@ -1,100 +1,90 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
-import { Link, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "./Navbar.css";
-import { useLocation, useNavigate } from "react-router-dom";
-import logo from "./images/StyleLogo.png"
-function Navbar(){
- let navigate = useNavigate();
- const [show, setShow] = useState(false);
- const [nav, setNav] = useState(false);
- const [menu, setMenu] = useState("nav-links");
- const [icon, setIcon] = useState("bx bx-menu");
- const location = useLocation();
- const token = sessionStorage.getItem("token");
+import logo from "./images/StyleLogo.png";
 
- useEffect(() => {
-   setShow(false);
-   setMenu("nav-links");
-   setIcon("bx bx-menu");
- }, [location]);
+function Navbar() {
+  const [nav, setNav] = useState(false);
+  const [burgerMenuOpen, setBurgerMenuOpen] = useState(false);
+  const location = useLocation();
 
- const toggle = () => {
-   if (!show) {
-     setMenu("nav-links open");
-     setIcon("bx bx-x");
-   } else {
-     setMenu("nav-links");
-     setIcon("bx bx-menu");
-   }
-   setShow(!show);
- };
+  useEffect(() => {
+    const navbar = () => {
+      if (window.scrollY >= 851) {
+        setNav(true);
+      } else {
+        setNav(false);
+      }
+    };
 
- function navbar() {
-   if (window.scrollY >= 851) {
-     setNav(true);
-   } else {
-     setNav(false);
-   }
- }
+    window.addEventListener("scroll", navbar);
 
+    return () => {
+      window.removeEventListener("scroll", navbar);
+    };
+  }, []);
 
- 
+  const toggleBurgerMenu = () => {
+    setBurgerMenuOpen(!burgerMenuOpen);
+  };
 
- window.addEventListener("scroll", navbar);
-
- return (
-   <header className={nav ? "not" : "sticky-header"}>
-     <a href="/" className="logo">
-       <img src={logo} alt="StyleMeUp logo" className="header-logo" />
-     </a>
-     <ul className={menu}>
-       <div className="navDesign">
-         <li className={nav ? "maintain" : "normal"}>
-            <a href="/" className={location.pathname === "/" ? "active" : ""}> 
-           Home
-           </a>
-         </li>
-         <li className={nav ? "maintain" : "normal"}>
-           <a
-           href="/#servicess"
-           className={location.pathname === "/#services" ? "active" : ""}
-         >
-           Our Services
-           </a>
-         </li>
-         
-         <li className={nav ? "maintain" : "normal"}>
+  return (
+    <header className={nav ? "not" : "sticky-header"}>
+      <a href="/" className="logo">
+        <img src={logo} alt="StyleMeUp logo" className="header-logo" />
+      </a>
+      <div
+        className={`burger-icon ${burgerMenuOpen ? "open" : ""}`}
+        onClick={toggleBurgerMenu}
+      >
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+      <nav className={`nav-links ${burgerMenuOpen ? "open" : ""}`}>
+        <div className="navDesign">
           <a
-           href="/#aboutUs"
-           className={location.pathname === "/#aboutUs" ? "active" : ""}
-         >
-           About Us
-           </a>
-         </li>
-         <li className={nav ? "maintain" : "normal"}>
-           <a
-           href="/contactUs"
-           className={location.pathname === "/contactUs" ? "active" : ""}
-         >
-           Contact Us
-           </a>
-         </li>
-         <li className={nav ? "maintain" : "normal"}>
-           <a
-           href="/#servicess"
-           className={location.pathname === "/#servicess" ? "active" : ""}
-         >
-           Book Your Appointment
-           </a>
-         </li>
-       </div>
-     </ul>
-
-     <div className={nav ? "maintain" : "normal"}>
-       <div className={icon} id="menu-icon" onClick={toggle}></div>
-     </div>
-   </header>
- );
+            href="/"
+            className={`nav-link ${location.pathname === "/" ? "active" : ""}`}
+          >
+            Home
+          </a>
+          <a
+            href="/#services"
+            className={`nav-link ${
+              location.pathname === "/#services" ? "active" : ""
+            }`}
+          >
+            Our Services
+          </a>
+          <a
+            href="/#aboutUs"
+            className={`nav-link ${
+              location.pathname === "/#aboutUs" ? "active" : ""
+            }`}
+          >
+            About Us
+          </a>
+          <a
+            href="/contactUs"
+            className={`nav-link ${
+              location.pathname === "/contactUs" ? "active" : ""
+            }`}
+          >
+            Contact Us
+          </a>
+          <a
+            href="/#servicess"
+            className={`nav-link ${
+              location.pathname === "/#servicess" ? "active" : ""
+            }`}
+          >
+            Book Your Appointment
+          </a>
+        </div>
+      </nav>
+    </header>
+  );
 }
+
 export default Navbar;

@@ -17,9 +17,22 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import videoo from "./images/videoo.mp4";
 import {Parallax} from "react-parallax";
 import Typewriter from "typewriter-effect";
+import wigs from "./images/WigsandHair.jpg";
+import meni from "./images/meni.png"
+import Reservation from "../Reservation/Reservation";
 function Home() {
+  /*Form*/
+   const [showForm, setShowForm] = useState(false);
 
+    const openFormPopup = () => {
+      setShowForm(true);
+    };
 
+    const closeFormPopup = () => {
+      setShowForm(false);
+    };
+
+   
   /*Carousel*/
   const scroll = () => {
     var left = document.querySelector(".scroll-devs");
@@ -47,6 +60,8 @@ function Home() {
     "Welcome to Style Me Up, where beauty is redefined. Step into our world of elegance and sophistication. Our expert team is dedicated to crafting your perfect look, from head to toe. Discover the latest trends, pamper yourself with luxurious treatments, and leave feeling confident and fabulous. At Style Me Up, we embrace individuality and empower you to shine. Join us for a transformative experience that celebrates your unique style. Indulge in the art of beauty at Style Me Up. Unleash your inner glamour and let us elevate your charm to new heights. Your journey to a more stylish you begins here.";
 
 
+     
+
   return (
     <>
       {/*HeroImage*/}
@@ -58,15 +73,13 @@ function Home() {
           className="heroImage"
         />
 
-        {/* <img className="heroImage" src={heroIm} alt="heroImage" /> */}
-
         {/* Title of Carousel */}
-        
-          <p className="titleServices" id="servicess">
-            Our Services
-          </p>
-          <img className="line" src={line} alt="line" />
-        
+
+        <p className="titleServices" id="servicess">
+          Our Services
+        </p>
+        <img className="line" src={line} alt="line" />
+
         <div className="scroll-collection">
           <div className="parent-arrow">
             <button className="leftarrow" onClick={() => scrollr()}>
@@ -77,36 +90,90 @@ function Home() {
           {/* Carousel */}
           <div className="cover">
             <div className="scroll-devs">
-              
-                <div className="services1">
-                  <img className="child-image1" src={pic1} alt="pic1" />
-                  <p className="paragraphofServices">Haircut and Styling</p>
-                  <button className="booking">Book Now</button>
-                </div>
-              
+              <div className="services1">
+                <img
+                  className="child-image1"
+                  src={pic1}
+                  alt="Haircut and Styling"
+                />
+                <p className="paragraphofServices">Haircut and Styling</p>
+
+                <button
+                  className="booking"
+                  onClick={() => {
+                    localStorage.setItem(
+                      "selectedService",
+                      "Haircut and Styling"
+                    );
+                    openFormPopup();
+                  }}
+                >
+                  Book Now
+                </button>
+              </div>
+
               <div className="services">
-                <img className="child-image2" src={nailss} alt="pic2" />
+                <img
+                  className="child-image2"
+                  src={wigs}
+                  alt="Wigs and Hair Extension"
+                />
+                <p className="paragraphofServices">Wigs and Hair Extension</p>
+
+                <button
+                  className="booking"
+                  onClick={() => {
+                    localStorage.setItem(
+                      "selectedService",
+                      "Wigs and Hair Extension"
+                    );
+                    openFormPopup();
+                  }}
+                >
+                  Book Now
+                </button>
+              </div>
+              <div className="services3">
+                <img className="child-image1" src={pic2} alt="Nails" />
                 <p className="paragraphofServices">Nails</p>
-                <button className="booking">Book Now</button>
+                <button
+                  className="booking"
+                  onClick={() => {
+                    localStorage.setItem("selectedService", "Nails");
+                    openFormPopup();
+                  }}
+                >
+                  Book Now
+                </button>
               </div>
-              <div className="services">
-                <img className="child-image1" src={pic3} alt="pic3" />
+              <div className="services4">
+                <img className="child-image1" src={pic3} alt="Makeup" />
                 <p className="paragraphofServices">Makeup</p>
-                <button className="booking">Book Now</button>
+                <button
+                  className="booking"
+                  onClick={() => {
+                    localStorage.setItem("selectedService", "Makeup");
+                    openFormPopup();
+                  }}
+                >
+                  Book Now
+                </button>
               </div>
-              <div className="services">
-                <img className="child-image1" src={pic2} alt="pic1" />
-                <p className="paragraphofServices">Haircut and Styling</p>
-                <button className="booking">Book Now</button>
-              </div>
-              <div className="services">
-                <img className="child-image1" src={pic3} alt="pic2" />
-                <p className="paragraphofServices">Haircut and Styling</p>
-                <button className="booking">Book Now</button>
+              <div className="services5">
+                <img className="child-image1" src={meni} alt=">Meni and Pedi" />
+                <p className="paragraphofServices">Meni and Pedi</p>
+                <button
+                  className="booking"
+                  onClick={() => {
+                    localStorage.setItem("selectedService", "Meni and Pedi");
+                    openFormPopup();
+                  }}
+                >
+                  Book Now
+                </button>
               </div>
             </div>
           </div>
-
           <div className="parent-arrow">
             <button className="rightarrow" onClick={() => scroll()}>
               <img className="arrows-heights" src={rightt} alt="right arrow" />
@@ -156,11 +223,19 @@ function Home() {
               />
             )}
           </div>
-          <video controls>
+          <video controls className="vid">
             <source src={videoo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
+
+        {showForm && (
+          <div className="res-popupRes">
+            <div className="res-popup-contentRes">
+              <Reservation />
+            </div>
+          </div>
+        )}
       </div>
     </>
   );

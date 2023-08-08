@@ -1,0 +1,124 @@
+
+.selectedServiceTitle{
+  border:none;
+}
+
+.formBook {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  justify-content: center; /* Center the content vertically */
+  background:white;
+  width: 400px; /* Optional: Set the width of the form */
+  padding: 20px; /* Optional: Add some padding to the form */
+  border: 2px solid #F1B434;
+    border-radius: 15px
+;
+}
+
+
+ .inputBook{
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+ }
+
+ .btnss{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .selectedServiceTitle{
+  padding-bottom: 5px;
+  margin-bottom: 17px;
+  color: #000;
+  font-family: Inknut Antiqua;
+  font-size: 30.01px;
+  font-style: normal;
+  line-height: 0px;
+  padding-top: 46px;
+  font-weight: 550;
+ }
+
+
+.res-form {
+  display: flex;
+  flex-direction: column;
+  width: 64%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.res-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.res-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.res-input-details {
+  height: 100px;
+}
+
+.res-submit-btn,
+.res-close-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #4caf50;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.res-close-btn {
+  background-color: #f44336;
+}
+
+.res-submit-btn:hover,
+.res-close-btn:hover {
+  background-color: #45a049;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-container {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+}
+
+.contentts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
