@@ -1,9 +1,10 @@
 import "./Footer.css";
-import facebook from "./images/facebook.png"
-import instagram from "./images/instagram.png"
-import whatsapp from "./images/whatsapp.png"
+import facebook from "./images/facebook.png";
+import instagram from "./images/instagram.png";
+import whatsapp from "./images/whatsapp.png";
+import { useLocation } from "react-router-dom";
 function Footer(){
-
+const location = useLocation();
     return (
       <div className="footerAll">
         <div className="grid-container">
@@ -11,9 +12,13 @@ function Footer(){
             <div className="footerLeft">
               <p className="footerTitles">SOCIAL MEDIA LINKS</p>
               <div className="imagesFooter">
-                <img className="imagesPart" src={facebook} alt="facebook" />
+                <a href="https://www.facebook.com/profile.php?id=100078746231380">
+                  <img className="imagesPart" src={facebook} alt="facebook" />
+                </a>
                 <img className="imagesPart" src={instagram} alt="instagram" />
-                <img className="imagesPart" src={whatsapp} alt="whatsapp" />
+                <a href="https://wa.me/971527943415" >
+                  <img className="imagesPart" src={whatsapp} alt="whatsapp" />
+                </a>
               </div>
               <p className="dontforget">Don't Forget To Follow Us!</p>
             </div>
@@ -22,11 +27,21 @@ function Footer(){
             <div className="footerMiddle">
               <p className="footerTitles">SITEMAP</p>
               <p className="footerPar">
-                <p>Home</p>
-                <p>Our Services</p>
-                <p>About Us</p>
-                <p>Contact Us</p>
-                <p>Book Your Appointment</p>
+                <a href="/" className={location.pathname}>
+                  <p>Home</p>
+                </a>
+                <a href="/#servicess" className={location.pathname}>
+                  <p>Our Services</p>
+                </a>
+                <a href="/#aboutUs" className={location.pathname}>
+                  <p>About Us</p>
+                </a>
+                <a href="/contactUs" className={location.pathname}>
+                  <p>Contact Us</p>
+                </a>
+                <a href="/#servicess" className={location.pathname}>
+                  <p>Book Your Appointment</p>
+                </a>
               </p>
             </div>
           </div>

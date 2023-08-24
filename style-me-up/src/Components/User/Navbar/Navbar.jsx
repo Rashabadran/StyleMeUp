@@ -50,9 +50,9 @@ function Navbar() {
             Home
           </a>
           <a
-            href="/#services"
+            href="/#servicess"
             className={`nav-link ${
-              location.pathname === "/#services" ? "active" : ""
+              location.pathname === "/#servicess" ? "active" : ""
             }`}
           >
             Our Services

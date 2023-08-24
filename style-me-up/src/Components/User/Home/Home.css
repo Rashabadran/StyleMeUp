@@ -290,7 +290,149 @@ font-weight: 550;
     
   }
 
-  @media(max-width:480px){
+   @media (max-width:330px){
+    .discoverTitle{
+      font-size: 18px;
+    }
+
+     .react-parallax-bgimage{
+      width: 513px !important;;
+      }
+
+    
+    .scroll-devs{
+      align-items: flex-start;
+    }
+    .cover{
+      height: 87%;
+      width: 247px;
+      padding-left: 0%; 
+    }
+    .arrows-heights{
+      width: fit-content;
+      height: fit-content;
+         
+    }
+    .rightarrow{
+      margin-right: 45px;
+    }
+   .services1 {
+    border: 2px solid #F1B434;
+    border-radius: 10px;
+    padding: 30px;
+    margin-right: 8px;
+    margin-left: 1%;
+}
+
+    .services {
+    width: 171px;
+    border: 2px solid #F1B434;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 17%;
+    margin-right: 8px;
+}
+  .services3 {
+    width: 163px;
+    border: 2px solid #F1B434;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 19%;
+    margin-right: 0px;
+}
+.services4 {
+    width: 171px;
+    border: 2px solid #F1B434;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 19%;
+    margin-right: 0px;
+}
+  .services5 {
+    width: 171px;
+    border: 2px solid #F1B434;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 20%;
+    margin-right: 8px;
+}
+    .child-image1 {
+    width: 167px;
+    height: 208px;
+    }
+
+    .child-image2 {
+    width: 177px;
+    height: 208px;
+    }
+
+    .paragraphofServices {
+    font-size: 15.03px;
+    font-weight: 400;
+    font-family: 'Inknut Antiqua';
+    }
+
+    .booking{
+      width: 78.58px;
+    }
+
+    .discoverParagraph {
+      text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-family: Inknut Antiqua;
+    font-size: 16.01px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  
+  .titleServices{
+    font-size: 21.01px;
+  }
+
+  .aboutUsTitle{
+    font-size: 21.01px;
+  }
+
+  .aboutUsSection {
+    display: flex;
+    flex-direction: column-reverse;
+   
+    display: flex;
+    padding-right: 0px; 
+    padding-left: 0px;
+    margin-right:10px
+
+    
+}
+.aboutUsParagraph {
+    text-align: center;
+    color: #000;
+    width: 100%;
+    font-family: Inknut Antiqua;
+    font-size: 16.01px;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   margin-right: 9px;
+   margin-left: 5px;
+}
+
+  .vid{
+        padding-bottom: 24px;
+        margin-left:20px;
+        margin-right: 10px;
+        
+  }
+  
+
+  }
+
+  
+  @media (min-width:331px) and (max-width:480px){
 
     .react-parallax-bgimage{
       width: 513px !important;;
@@ -424,32 +566,696 @@ font-weight: 550;
         
   }
   }
-  @media(min-width:481px) and (max-width:767px){
-    .react-parallax-bgimage{
-      width:510px!;
-      }
 
+  
+  @media (min-width: 481px) and (max-width: 765px) {
+  .scroll-devs{
+      align-items: flex-start;
+    }
+    .cover{
+      height: 87%;
+      width: 247px;
+      /* padding-left: 2%; */
+    }
+    .arrows-heights{
+      width: fit-content;
+      height: fit-content;
+    }
+    
+   .services1 {
+    border: 2px solid #F1B434;
+    border-radius: 10px;
+    padding: 30px;
+    margin-right: 8px;
+    margin-left: 1%;
+}
+
+    .services {
+    width: 171px;
+    border: 2px solid #F1B434;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 17%;
+    margin-right: 8px;
+}
+  .services3 {
+    width: 163px;
+    border: 2px solid #F1B434;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 19%;
+    margin-right: 0px;
+}
+.services4 {
+    width: 171px;
+    border: 2px solid #F1B434;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 19%;
+    margin-right: 0px;
+}
+  .services5 {
+    width: 171px;
+    border: 2px solid #F1B434;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 20%;
+    margin-right: 8px;
+}
+    .child-image1 {
+    width: 167px;
+    height: 208px;
+    }
+
+    .child-image2 {
+    width: 177px;
+    height: 208px;
+    }
+
+    .paragraphofServices {
+    font-size: 15.03px;
+    font-weight: 400;
+    font-family: 'Inknut Antiqua';
+    }
+
+    .booking{
+      width: 78.58px;
+    }
+
+    .discoverParagraph {
+      text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-family: Inknut Antiqua;
+    font-size: 16.01px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
-  @media(min-width:768px) and (max-width:7991px){
-
-    .react-parallax-bgimage{
-      width:510px;
-      }
+  .discoverTitle{
+    font-size: 21.01px;
+  }
+  .titleServices{
+    font-size: 21.01px;
   }
 
-  @media(min-width:992px) and (max-width:1199px){
-
-
+  .aboutUsTitle{
+    font-size: 21.01px;
   }
 
-@media(min-width:1200px) and (max-width:1919px){
+  .aboutUsSection {
+    display: flex;
+    flex-direction: column-reverse;
+   
+    display: flex;
+    padding-right: 0px; 
+    padding-left: 0px;
+    margin-right:10px
+
+    
+}
+.aboutUsParagraph {
+    text-align: center;
+    color: #000;
+    width: 100%;
+    font-family: Inknut Antiqua;
+    font-size: 16.01px;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   margin-right: 9px;
+   margin-left: 5px;
+}
+
+  .vid{
+        padding-bottom: 24px;
+        margin-left:20px;
+        margin-right: 10px;
+        
+  }
+}
 
 
+@media (min-width: 765px) and (max-width: 900px) {
+  .scroll-devs{
+      align-items: flex-start;
+    }
+    .scroll-collection {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+    .cover{
+      height: 87%;
+      width: 247px;
+      /* padding-left: 2%; */
+    }
+    .arrows-heights{
+      width: fit-content;
+      height: fit-content;
+    }
+    
+   .services1 {
+    border: 2px solid #F1B434;
+    border-radius: 10px;
+    padding: 30px;
+    margin-right: 8px;
+    margin-left: 1%;
+}
+
+    .services {
+    width: 171px;
+    border: 2px solid #F1B434;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 17%;
+    margin-right: 8px;
+}
+  .services3 {
+    width: 163px;
+    border: 2px solid #F1B434;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 19%;
+    margin-right: 0px;
+}
+.services4 {
+    width: 171px;
+    border: 2px solid #F1B434;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 19%;
+    margin-right: 0px;
+}
+  .services5 {
+    width: 171px;
+    border: 2px solid #F1B434;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 20%;
+    margin-right: 8px;
+}
+    .child-image1 {
+    width: 167px;
+    height: 208px;
+    }
+
+    .child-image2 {
+    width: 177px;
+    height: 208px;
+    }
+
+
+
+    .paragraphofServices {
+    font-size: 15.03px;
+    font-weight: 400;
+    font-family: 'Inknut Antiqua';
+    }
+
+    .booking{
+      width: 78.58px;
+    }
+
+    .discoverParagraph {
+      text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-family: Inknut Antiqua;
+    font-size: 16.01px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
-@media(min-width:1920px){
+  .discoverTitle{
+    font-size: 21.01px;
+  }
+  .titleServices{
+    font-size: 21.01px;
+  }
+
+  .aboutUsTitle{
+    font-size: 21.01px;
+  }
+
+  .aboutUsSection {
+    display: flex;
+    flex-direction: column-reverse;
+   
+    display: flex;
+    padding-right: 0px; 
+    padding-left: 0px;
+    margin-right:10px
+
+    
+}
+.aboutUsParagraph {
+    text-align: center;
+    color: #000;
+    width: 100%;
+    font-family: Inknut Antiqua;
+    font-size: 16.01px;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   margin-right: 9px;
+   margin-left: 5px;
+}
+
+  .vid{
+        padding-bottom: 24px;
+        margin-left:20px;
+        margin-right: 10px;
+        
+  }
+}
+
+/* Responsive styles for screens between 768px and 791px */
+@media (min-width: 901px) and (max-width: 1400px) {
+ 
+  .scroll-collection {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cover {
+    height: 87%;
+      width: calc(261px * 3 + 70px * 3);
+      padding-left: 2%;
+}
+
+.parent-arrow {
+  align-self: center;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.arrows-heights {
+  height: 100%;
+    width: 100%;
+}
+
+.child-image1 {
+  width: 308px;
+  height: 298px;
+}
+.child-image2 {
+  width: 300px;
+  height: 298px;
+}
+.child-image {
+  width: 317px;
+  height: 298px;
+}
+
+.leftarrow {
+  background: none;
+  border: 0px;
+  height: 78px;
+  width: fit-content;
+}
+
+.rightarrow {
+  background: none;
+  border: 0px;
+  height: 78px;
+  width: fit-content;
+}
+.scroll-devs {
+  width: 96%;
+  height: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  scroll-behavior: smooth;
   
 }
+
+/*Services Design*/
+
+.services1{
+  border: 2px solid #F1B434;
+  border-radius: 10px;
+  padding:30px;
+  margin-right: 90px;
+  margin-left:60px;
+  width:300px 
+}
+.services{
+  width:299px;
+  border: 2px solid #F1B434;
+  border-radius: 10px;
+  padding:30px;
+  margin-right: 80px;
+}
+.child-image1:hover{
+  transform:translateY(-0.5rem);
+}
+.child-image2:hover{
+  transform:translateY(-0.5rem);
+}
+.services3{
+  border: 2px solid #F1B434;
+  border-radius: 10px;
+  padding:30px;
+  margin-right: 80px;
+}
+
+.services4{
+  border: 2px solid #F1B434;
+  border-radius: 10px;
+  padding:30px;
+  margin-right: 80px;
+}
+.services5{
+  border: 2px solid #F1B434;
+  border-radius: 10px;
+  padding:30px;
+  margin-right: 80px;
+}
+.child-image1:hover{
+  transform:translateY(-0.5rem);
+}
+.child-image2:hover{
+  transform:translateY(-0.5rem);
+}
+
+
+    .paragraphofServices {
+    font-size: 15.03px;
+    font-weight: 400;
+    font-family: 'Inknut Antiqua';
+    }
+
+    .booking{
+      width: 78.58px;
+    }
+
+    .discoverParagraph {
+      text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-family: Inknut Antiqua;
+    font-size: 16.01px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .discoverTitle{
+    font-size: 21.01px;
+  }
+  .titleServices{
+    font-size: 21.01px;
+  }
+
+  .aboutUsTitle{
+    font-size: 21.01px;
+  }
+
+  .aboutUsSection {
+    display: flex;
+    flex-direction: column-reverse;
+   
+    display: flex;
+    padding-right: 0px; 
+    padding-left: 0px;
+    margin-right:10px
+
+    
+}
+.aboutUsParagraph {
+    text-align: center;
+    color: #000;
+    width: 100%;
+    font-family: Inknut Antiqua;
+    font-size: 16.01px;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   margin-right: 9px;
+   margin-left: 5px;
+}
+
+  .vid{
+        padding-bottom: 24px;
+        margin-left:20px;
+        margin-right: 10px;
+        
+  }
+}
+
+
+@media (min-width: 1401px) and (max-width: 1420px) {
+ 
+  .scroll-collection {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cover {
+    height: 87%;
+      width: calc(365px * 3 + 70px * 3);
+      padding-left: 2%;
+}
+
+.parent-arrow {
+  align-self: center;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.arrows-heights {
+  height: 100%;
+    width: 100%;
+}
+
+.child-image1 {
+  width: 308px;
+  height: 298px;
+}
+.child-image2 {
+  width: 300px;
+  height: 298px;
+}
+.child-image {
+  width: 317px;
+  height: 298px;
+}
+
+.leftarrow {
+  background: none;
+  border: 0px;
+  height: 78px;
+  width: fit-content;
+}
+
+.rightarrow {
+  background: none;
+  border: 0px;
+  height: 78px;
+  width: fit-content;
+}
+.scroll-devs {
+  width: 96%;
+  height: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  scroll-behavior: smooth;
+  
+}
+
+/*Services Design*/
+
+.services1{
+  border: 2px solid #F1B434;
+  border-radius: 10px;
+  padding:30px;
+  margin-right: 41px;
+  margin-left:60px;
+  width:300px 
+}
+.services{
+  width:299px;
+  border: 2px solid #F1B434;
+  border-radius: 10px;
+  padding:30px;
+  margin-right: 41px;
+}
+.child-image1:hover{
+  transform:translateY(-0.5rem);
+}
+.child-image2:hover{
+  transform:translateY(-0.5rem);
+}
+.services3{
+  border: 2px solid #F1B434;
+  border-radius: 10px;
+  padding:30px;
+  margin-right: 41px;
+}
+
+.services4{
+  border: 2px solid #F1B434;
+  border-radius: 10px;
+  padding:30px;
+  margin-right: 41px;
+}
+.services5{
+  border: 2px solid #F1B434;
+  border-radius: 10px;
+  padding:30px;
+  margin-right: 41px;
+}
+.child-image1:hover{
+  transform:translateY(-0.5rem);
+}
+.child-image2:hover{
+  transform:translateY(-0.5rem);
+}
+
+
+    
+}
+
+@media (min-width: 1421px) and (max-width: 1780px) {
+ 
+  .scroll-collection {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cover {
+    height: 87%;
+      width: calc(365px * 3 + 70px * 3);
+      padding-left: 2%;
+}
+
+.parent-arrow {
+  align-self: center;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.arrows-heights {
+  height: 100%;
+    width: 100%;
+}
+
+.child-image1 {
+  width: 308px;
+  height: 298px;
+}
+.child-image2 {
+  width: 300px;
+  height: 298px;
+}
+.child-image {
+  width: 317px;
+  height: 298px;
+}
+
+.leftarrow {
+  background: none;
+  border: 0px;
+  height: 78px;
+  width: fit-content;
+}
+
+.rightarrow {
+  background: none;
+  border: 0px;
+  height: 78px;
+  width: fit-content;
+}
+.scroll-devs {
+  width: 96%;
+  height: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  scroll-behavior: smooth;
+  
+}
+
+/*Services Design*/
+
+.services1{
+  border: 2px solid #F1B434;
+  border-radius: 10px;
+  padding:30px;
+  margin-right: 41px;
+  margin-left:60px;
+  width:300px 
+}
+.services{
+  width:299px;
+  border: 2px solid #F1B434;
+  border-radius: 10px;
+  padding:30px;
+  margin-right: 41px;
+}
+.child-image1:hover{
+  transform:translateY(-0.5rem);
+}
+.child-image2:hover{
+  transform:translateY(-0.5rem);
+}
+.services3{
+  border: 2px solid #F1B434;
+  border-radius: 10px;
+  padding:30px;
+  margin-right: 41px;
+}
+
+.services4{
+  border: 2px solid #F1B434;
+  border-radius: 10px;
+  padding:30px;
+  margin-right: 41px;
+}
+.services5{
+  border: 2px solid #F1B434;
+  border-radius: 10px;
+  padding:30px;
+  margin-right: 41px;
+}
+.child-image1:hover{
+  transform:translateY(-0.5rem);
+}
+.child-image2:hover{
+  transform:translateY(-0.5rem);
+}
+
+
+    
+}
+
+
 
   

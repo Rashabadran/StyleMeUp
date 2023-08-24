@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "./User/Navbar/Navbar";
 import Footer from "./User/Footer/Footer";
-import { Outlet, useLocation } from "react-router";
+import { Outlet} from "react-router";
 
 const Layout = () => {
-  let location = useLocation();
+  // let location = useLocation();
 
   return (
     <>

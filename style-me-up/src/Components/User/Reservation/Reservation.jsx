@@ -7,8 +7,8 @@ const Reservation = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [selectedDate, setSelectedDate] = useState("");
   const [selectedService, setSelectedService] = useState("");
-  const [messages, setMessages] = useState("");
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const  [message,setMessages] = useState("");
+  const [isSubmitted,setIsSubmitted] = useState(false);
 
   // Fetch selectedService from local storage on component mount
   useEffect(() => {
@@ -76,7 +76,7 @@ const Reservation = () => {
         <div className="btnss">
           <ReactWhatsapp
             className="booking"
-            number="+961 70782509"
+            number="+971 527943415"
             message={`Hello, I am ${name}. I want to take a ${selectedService} appointment on ${selectedDate}`} // Show the WhatsApp message when isSubmitted is true
           >
             Submit
