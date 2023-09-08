@@ -71,7 +71,7 @@ function Navbar() {
               location.pathname === "/contactUs" ? "active" : ""
             }`}
           >
-            Contact Us
+            Location
           </a>
           <a
             href="/#servicess"

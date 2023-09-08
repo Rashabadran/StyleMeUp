@@ -71,7 +71,7 @@ function Home() {
 
         <title>Style Me Up</title>
         <meta
-          name="Style Me Up"
+          name="description"
           content="beauty salon, hair styling, wigs, makeup, nails, beauty salon in United Emirates, beauty supply, beauty salon near me, beauty plus, best beauty salon, best beauty salon in United Emirates, best salon in UAE"
         />
         <meta
@@ -102,7 +102,7 @@ function Home() {
           property="og:description"
           content="Unlock your beauty's true potential at Style Me Up salon. Experience the transformative touch of our expert stylists. Book an appointment now!"
         />
-        <meta property="og:image" content={heroIm} />
+
         <meta property="og:url" content="https://stylemeup.ae/" />
         <meta property="og:type" content="website" />
         {/* Add Twitter Card meta tags */}
@@ -112,7 +112,7 @@ function Home() {
           name="twitter:description"
           content="Unlock your beauty's true potential at Style Me Up salon. Experience the transformative touch of our expert stylists. Book an appointment now!"
         />
-        <meta name="twitter:image" content={heroIm} />
+
         <script type="application/ld+json">
           {`
       {
@@ -124,7 +124,7 @@ function Home() {
          Like Never Before. Discover the Latest Trends, Luxury Treatments, and Personalized Services. Join us at Style Me Up - Where Beauty Meets Elegance.
          Feel free to customize this description to accurately reflect the unique features, services, and atmosphere of your salon. Include relevant keywords 
          that potential customers might search for, and ensure that the description provides a clear and compelling overview of what your salon has to offer.",
-        "image": "${heroIm}",
+        
         "address": {
           
           "streetAddress": "Your Street Address",
@@ -151,7 +151,6 @@ function Home() {
           nonce="MK2FWOFYsAMP7kvNDFwNDw"
         ></script>
       </Helmet>
-
       {/*HeroImage*/}
       <div className="homePart">
         <Parallax
