@@ -39,7 +39,7 @@ const location = useLocation();
                   <p>About Us</p>
                 </a>
                 <a href="/contactUs" className={location.pathname}>
-                  <p>Contact Us</p>
+                  <p>Location</p>
                 </a>
                 <a href="/#servicess" className={location.pathname}>
                   <p>Book Your Appointment</p>
