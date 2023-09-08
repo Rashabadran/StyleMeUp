@@ -134,8 +134,8 @@ const ContactUs = () => {
             <div className="google-map">
               <div className="map">
                 <iframe
-                title="styleMeUp"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53025.24945718539!2d35.45511707246971!3d33.83609669899106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f19954f85ad41%3A0x72179d93a1d5aae2!2sMasri%20birthday&#39;s%20decoration!5e0!3m2!1sen!2slb!4v1685357851183!5m2!1sen!2slb"
+                  title="styleMeUp"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14438.278495353929!2d55.3218798!3d25.2177324!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5dc7af0aeef1%3A0x6c59132449631e2a!2sOccidental%20Al%20Jaddaf!5e0!3m2!1sen!2slb!4v1694186273087!5m2!1sen!2slb"
                   width="600"
                   height="450"
                   style={{ border: 0 }}
@@ -144,6 +144,7 @@ const ContactUs = () => {
                   referrerpolicy="no-referrer-when-downgrade"
                   className="iframe"
                 ></iframe>
+
               </div>
             </div>
           </div>

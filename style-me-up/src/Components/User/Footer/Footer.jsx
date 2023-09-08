@@ -15,8 +15,10 @@ const location = useLocation();
                 <a href="https://www.facebook.com/profile.php?id=100078746231380">
                   <img className="imagesPart" src={facebook} alt="facebook" />
                 </a>
-                <img className="imagesPart" src={instagram} alt="instagram" />
-                <a href="https://wa.me/971527943415" >
+                <a href="https://instagram.com/stylemeup_beautysalon?igshid=OGQ5ZDc2ODk2ZA==">
+                  <img className="imagesPart" src={instagram} alt="instagram" />
+                </a>
+                <a href="https://wa.me/971527943415">
                   <img className="imagesPart" src={whatsapp} alt="whatsapp" />
                 </a>
               </div>
@@ -48,7 +50,10 @@ const location = useLocation();
           <div className="grid-item">
             <div className="footerRight">
               <p className="footerTitles">LOCATION</p>
-              <p className="footerLocation">Dubai - United Arab Emirates </p>
+              <a href="/contactUs" className={location.pathname}>
+                <p className="footerLocation">Dubai - United Arab Emirates </p>
+                <h3>Occidental Al Jaddaf Hotel</h3>
+              </a>
             </div>
           </div>
         </div>
