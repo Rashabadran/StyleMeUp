@@ -101,6 +101,14 @@ text-decoration: none;
   color: black;
   cursor: pointer;
 }
+ :link:not(cite) {
+    color: black !important;
+}
+.aColor{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
 
 @media (min-width: 481px) and (max-width: 900px) {
   .grid-container {

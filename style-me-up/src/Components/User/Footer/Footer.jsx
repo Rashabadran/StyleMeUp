@@ -2,9 +2,11 @@ import "./Footer.css";
 import facebook from "./images/facebook.png";
 import instagram from "./images/instagram.png";
 import whatsapp from "./images/whatsapp.png";
+import mail from "./images/mail.png"
 import { useLocation } from "react-router-dom";
 function Footer(){
 const location = useLocation();
+ const emailAddress = "mohammadchahine@stylemeup.ae";
     return (
       <div className="footerAll">
         <div className="grid-container">
@@ -21,6 +23,18 @@ const location = useLocation();
                 <a href="https://wa.me/971527943415">
                   <img className="imagesPart" src={whatsapp} alt="whatsapp" />
                 </a>
+                <a href={`mailto:${emailAddress}`}>
+                  <img className="imagesPart" src={mail} alt="mail" />
+                </a>
+
+                <div className="emailContact">
+                  <h4>Mail Us</h4>
+                  <h3 classname="aColor">
+                    <a href={`mailto:${emailAddress}`}>
+                      mohammadchahine@stylemeup.ae
+                    </a>
+                  </h3>
+                </div>
               </div>
               <p className="dontforget">Don't Forget To Follow Us!</p>
             </div>
