@@ -6,7 +6,7 @@ import mail from "./images/mail.png"
 import { useLocation } from "react-router-dom";
 function Footer(){
 const location = useLocation();
- const emailAddress = "mohammadchahine@stylemeup.ae";
+ const emailAddress = "info@stylemeup.ae";
     return (
       <div className="footerAll">
         <div className="grid-container">
@@ -28,10 +28,10 @@ const location = useLocation();
                 </a>
 
                 <div className="emailContact">
-                  <h4>Mail Us</h4>
+                 
                   <h3 classname="aColor">
                     <a href={`mailto:${emailAddress}`}>
-                      mohammadchahine@stylemeup.ae
+                      info@stylemeup.ae
                     </a>
                   </h3>
                 </div>

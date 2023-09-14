@@ -44,6 +44,7 @@ const Reservation = () => {
         <div className="contentts">
           <div>
             <label>Name:</label>
+            <br/>
             <input
               className="inputBook"
               type="text"
@@ -54,6 +55,7 @@ const Reservation = () => {
           </div>
           <div>
             <label>Phone Number:</label>
+            <br/>
             <input
               className="inputBook"
               type="tel"
@@ -64,6 +66,7 @@ const Reservation = () => {
           </div>
           <div>
             <label>Date:</label>
+            <br/>
             <input
               className="inputBook"
               type="date"
