@@ -44,7 +44,7 @@ const Reservation = () => {
         <div className="contentts">
           <div>
             <label>Name:</label>
-            <br/>
+            <br />
             <input
               className="inputBook"
               type="text"
@@ -55,7 +55,7 @@ const Reservation = () => {
           </div>
           <div>
             <label>Phone Number:</label>
-            <br/>
+            <br />
             <input
               className="inputBook"
               type="tel"
@@ -66,7 +66,7 @@ const Reservation = () => {
           </div>
           <div>
             <label>Date:</label>
-            <br/>
+            <br />
             <input
               className="inputBook"
               type="date"
@@ -79,7 +79,7 @@ const Reservation = () => {
         <div className="btnss">
           <ReactWhatsapp
             className="booking"
-            number="+971 527943415"
+            number="+971506006242"
             message={`Hello, I am ${name}. I want to take a ${selectedService} appointment on ${selectedDate}`} // Show the WhatsApp message when isSubmitted is true
           >
             Submit

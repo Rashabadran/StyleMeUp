@@ -28,12 +28,11 @@ const location = useLocation();
                 </a>
 
                 <div className="emailContact">
-                 
                   <h3 classname="aColor">
-                    <a href={`mailto:${emailAddress}`}>
-                      info@stylemeup.ae
-                    </a>
+                    <a href={`mailto:${emailAddress}`}>info@stylemeup.ae</a>
                   </h3>
+                  <h3>+971506006242</h3>
+                  <h3>+971527943415</h3>
                 </div>
               </div>
               <p className="dontforget">Don't Forget To Follow Us!</p>
